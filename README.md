@@ -26,10 +26,10 @@ For my design I did some changes in the original:
   ![Alt text](images/led_case.jpg?raw=true "Title")
   
 - Webserver: The original rpoject used a NTP client to syn the time over internet. I ended up implementing an webserver with many configurations for the clock and did not use the NTP. Webserver based in Kris Kasprzak code https://github.com/KrisKasprzak/ESP32_WebPage
-  The configuration of the time and date is done by, first, clicking in the Get Local Time button. This will fill the fields with values of the current time in the device webserver is being accessed. After, clicking in
-  "Prog RTC Time" button will program the RTC module with the local time. Button "Get RTC Time" will get the curret time by RTC.
-  Led bightness and Display brightess sliders will change the brighness of the led strip and the time displays.
-  Scene setup is a TODO. The objective is to change the color and brightness nf the led strip according to current time.
+  - The configuration of the time and date is done by, first, clicking in the Get Local Time button. This will fill the fields with values of the current time in the device webserver is being accessed. After, clicking in
+  - "Prog RTC Time" button will program the RTC module with the local time. Button "Get RTC Time" will get the curret time by RTC.
+  - Led bightness and Display brightess sliders will change the brighness of the led strip and the time displays.
+  - Scene setup is a TODO. The objective is to change the color and brightness nf the led strip according to current time.
   
   
 
