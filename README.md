@@ -16,7 +16,7 @@ For my design I did some changes in the original:
   
 - Display order: I changed the order of the displays to adapt to Brazillian time format: DD:MM YYYY AM/PM HH:MM
 - ESP32 board: Original project used an ESP32 Mini. I didn't found it in my local shop so I used a NodeMcu 3.0 instead. The pan was to use the same firmware, but I did many changes at the end.
-- Internal RTC: As there is an webserver, time can be congifured in it and the RTC takes care of it. The RTC module has a battery to maintain the correct time.
+- Internal RTC: As there is an webserver, time can be congifured in it and the RTC takes care of it. The RTC module has a battery to maintain the correct time. I did small changes in the SlowSoftI2CMaster library to make it work in my hardware. Small delays added to i2c_init and i2c_start functions to improve I2C communication.
 
   ![Alt text](images/display_case.jpg?raw=true "Title")
 
