@@ -1,6 +1,6 @@
 Back to the Future clock 
 
-  ![Alt text](images/front.png?raw=true "Title")
+  ![Alt text](images/front.jpg?raw=true "Title")
 
 Inspired by the hork of jerome95: https://www.instructables.com/Back-to-the-Future-Lamp-Clock/?utm_source=newsletter&utm_medium=email
 
@@ -18,11 +18,11 @@ For my design I did some changes in the original:
 - ESP32 board: Original project used an ESP32 Mini. I didn't found it in my local shop so I used a NodeMcu 3.0 instead. The pan was to use the same firmware, but I did many changes at the end.
 - Internal RTC: As there is an webserver, time cn be congifured in it and the RTC takes care of it. The RTC module has a battery to maintain the correct time.
 
-  ![Alt text](images/display_case.png?raw=true "Title")
+  ![Alt text](images/display_case.jpg?raw=true "Title")
 
 - Added blind led to avoid sync problems.
 
-  ![Alt text](images/led_case.png?raw=true "Title")
+  ![Alt text](images/led_case.jpg?raw=true "Title")
   
 - Webserver: The original rpoject used a NTP client to syn the time over internet. I ended up implementing an webserver with many configurations for the clock and did not use the NTP.
 
