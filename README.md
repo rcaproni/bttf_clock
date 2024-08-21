@@ -7,6 +7,7 @@ For my design I did some changes in the original:
 
 - Case divided in two parts to print in small Ender3 printer: Original case is one piece, but it is bigger then the maximum size of my Ender3 printer. Using SketchUp I divided the case in 2 parts with sizes compatibe with my printer. I created internal pins
   to connect the tho parts with glue.
+  
   ![Alt text](images/divided.png?raw=true "Title")
   
 - Display order: I changed the order of the displays to adapt to Brazillian time format: DD:MM YYYY AM/PM HH:MM
