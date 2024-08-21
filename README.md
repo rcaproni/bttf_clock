@@ -4,20 +4,17 @@
 
 ## Based in the design of jerome95: https://www.instructables.com/Back-to-the-Future-Lamp-Clock/?utm_source=newsletter&utm_medium=email
 
-I'm big fan of BTTF trilogy. First project I decided to do when I acquired a 3D printer was the clock designed by jerome95. 
-The orignal project use the aestetics from BTTF's Delorean Time Cirtuits. The clock is controleed by an ESP32 Mini and it synchronize time over internet using a NTP client.
+I'm a big fan of the BTTF trilogy. The first project I decided to tackle when I acquired a 3D printer was the clock designed by jerome95. The original project uses the aesthetics of BTTF's DeLorean Time Circuits. The clock is controlled by an ESP32 Mini and synchronizes the time over the internet using an NTP client.
 
-For my design I did some changes in the original:
+For my design, I made some changes to the original:
 
-- Case divided in two parts to print in small Ender3 printer: Original case is one piece, but it is bigger then the maximum size of my Ender3 printer.
-  Using SketchUp I divided the case in 2 parts with sizes compatibe with my printer. I created internal pins to connect the tho parts with glue.
-  The STL files fo edit case can be found in the 3d folder.
+- Case divided into two parts for printing on a small Ender3 printer: The original case is a single piece, but it is larger than the maximum size of my Ender3 printer. Using SketchUp, I divided the case into two parts with sizes compatible with my printer. I also created internal pins to connect the two parts with glue. The STL files for the edited case can be found in the 3D folder
   
   ![Alt text](images/divided.png?raw=true "Title")
   
-- Display order: I changed the order of the displays to adapt to Brazillian time format: DD:MM YYYY AM/PM HH:MM
-- ESP32 board: Original project used an ESP32 Mini. I didn't found it in my local shop so I used a NodeMcu 3.0 instead. The plan was to use the same firmware, but I did many changes at the end.
-- Internal RTC: As there is an webserver, time can be congifured in it and the RTC takes care of it. The RTC module has a battery to maintain the correct time. I did small changes in the SlowSoftI2CMaster library to make it work in my hardware. Small delays added to i2c_init and i2c_start functions to improve I2C communication.
+- Display order: I changed the order of the displays to adapt to the Brazilian time format: DD:MM YYYY AM/PM HH:MM
+- ESP32 board: The original project used an ESP32 Mini, but I couldn’t find it at my local shop, so I used a NodeMcu 3.0 instead. Although I planned to use the same firmware, I ended up making many changes.
+- Internal RTC: Since there is a web server, the time can be configured through it, and the RTC maintains the correct time. The RTC module has a battery to keep the time accurate. I made small changes to the SlowSoftI2CMaster library to make it work with my hardware, adding slight delays to the i2c_init and i2c_start functions to improve I2C communication.
 
   ![Alt text](images/display_case.jpg?raw=true "Title")
 
@@ -25,11 +22,10 @@ For my design I did some changes in the original:
 
   ![Alt text](images/led_case.jpg?raw=true "Title")
   
-- Webserver: The original rpoject used a NTP client to syn the time over internet. I ended up implementing an webserver with many configurations for the clock and did not use the NTP. Webserver based in Kris Kasprzak code https://github.com/KrisKasprzak/ESP32_WebPage
-  - The configuration of the time and date is done by, first, clicking in the Get Local Time button. This will fill the fields with values of the current time in the device webserver is being accessed. After, clicking in
-  - "Prog RTC Time" button will program the RTC module with the local time. Button "Get RTC Time" will get the curret time by RTC.
-  - Led bightness and Display brightess sliders will change the brighness of the led strip and the time displays.
-  - Scene setup is a TODO. The objective is to change the color and brightness nf the led strip according to current time.
+- Webserver: The original project used an NTP client to sync the time over the internet. I ended up implementing a web server with many configuration options for the clock and did not use the NTP. The webserver based in Kris Kasprzak code https://github.com/KrisKasprzak/ESP32_WebPage
+  - The configuration of the time and date is done by first clicking the "Get Local Time" button. This will fill the fields with the current time from the device where the web server is being accessed. Then, clicking the "Prog RTC Time" button will program the RTC module with the local time. The "Get RTC Time" button will retrieve the current time from the RTC.
+  - The LED brightness and display brightness sliders will adjust the brightness of the LED strip and the time displays.
+  - Scene Setup is a TODO; the goal is to change the color and brightness of the LED strip according to the current time.
   
   
 
