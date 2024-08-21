@@ -12,5 +12,8 @@ For my design I did some changes in the original:
   
 - Display order: I changed the order of the displays to adapt to Brazillian time format: DD:MM YYYY AM/PM HH:MM
 - ESP32 board: Original project used an ESP32 Mini. I didn't found it in my local shop so I used a NodeMcu 3.0 instead. The pan was to use the same firmware, but I did many changes at the end.
-- Webserver: The original rpoject used a NTP client to syn the time over internet. I ended up implementing an webserver with many configurations for the clock and did not use the NTP. 
+- Webserver: The original rpoject used a NTP client to syn the time over internet. I ended up implementing an webserver with many configurations for the clock and did not use the NTP.
+
+![Alt text](images/webserver.png?raw=true "Title")
+ 
 - Internal RTC: As there is an webserver, time cn be congifured in it and the RTC takes care of it. The RTC module has a battery to maintain the correct time.
