@@ -127,9 +127,6 @@ void WebServer::init() {
 
     updateBrightness("50", "2");
 
-    // NTP client
-    // timeClient.begin();
-    // timeClient.setTimeOffset(3600 * GMT);
 }
 
 void WebServer::printWifiStatus() {
@@ -149,17 +146,14 @@ void WebServer::printWifiStatus() {
     Serial.println(ip);
 }
 
-// void WebServer::getTime() {
-
-// }
 
 void WebServer::handleClient() {
     server.handleClient();
 }
 
-// void WebServer::convertEpoch(time_t now, disp_t dispTime) {
 
-// }
+
+
 
 void WebServer::sendWebsite() {
     Serial.println("WebServer::sendWebsite(): sending web page");
@@ -181,18 +175,6 @@ void WebServer::sendXML() {
 
     sprintf(buf, "<V1>%d.%d</V1>\n", (int)(voltsA1), abs((int)(voltsA1 * 10) - ((int)(voltsA1) * 10)));
     strcat(XML, buf);
-
-    // if (LED0) {
-    //     strcat(XML, "<LED>1</LED>\n");
-    // } else {
-    //     strcat(XML, "<LED>0</LED>\n");
-    // }
-
-    // if (SomeOutput) {
-    //     strcat(XML, "<SWITCH>1</SWITCH>\n");
-    // } else {
-    //     strcat(XML, "<SWITCH>0</SWITCH>\n");
-    // }
 
     strcat(XML, "</Data>\n");
 
