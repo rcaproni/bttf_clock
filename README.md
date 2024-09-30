@@ -2,7 +2,7 @@
 
   ![Alt text](images/front.jpg?raw=true "Title")
 
-## Based in the design of jerome95: https://www.instructables.com/Back-to-the-Future-Lamp-Clock/?utm_source=newsletter&utm_medium=email
+Based on the design by jerome95 from [Instructables](https://www.instructables.com/Back-to-the-Future-Lamp-Clock/?utm_source=newsletter&utm_medium=email), I took on my first 3D printing project: a clock inspired by the *Back to the Future* DeLorean Time Circuits. This clock is controlled by an ESP32 Mini and syncs the time over the internet using an NTP client.
 
 I'm a big fan of the BTTF trilogy. The first project I decided to tackle when I acquired a 3D printer was the clock designed by jerome95. The original project uses the aesthetics of BTTF's DeLorean Time Circuits. The clock is controlled by an ESP32 Mini and synchronizes the time over the internet using an NTP client.
 
