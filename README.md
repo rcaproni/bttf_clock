@@ -23,10 +23,9 @@ For my design, I made some changes to the original:
 
   ![Alt text](images/led_case.jpg?raw=true "Title")
   
-- **Web Server**: Instead of using NTP sync, I implemented a web server based on [Kris Kasprzak's code](https://github.com/KrisKasprzak/ESP32_WebPage). The server allows users to configure the time and date, control LED and display brightness, and retrieve time data from the RTC. Clicking "Get Local Time" populates fields with the current time from the accessing device, while "Prog RTC Time" programs the RTC module. 
-  - The configuration of the time and date is done by first clicking the "Get Local Time" button. This will fill the fields with the current time from the device where the web server is being accessed. Then, clicking the "Prog RTC Time" button will program the RTC module with the local time. The "Get RTC Time" button will retrieve the current time from the RTC.
-  - The LED brightness and display brightness sliders will adjust the brightness of the LED strip and the time displays.
-- *Scene Setup* is a work in progress, and my goal is to synchronize LED colors and brightness with the current time.
+- **Web Server**: Instead of using NTP sync, I implemented a web server based on [Kris Kasprzak's code](https://github.com/KrisKasprzak/ESP32_WebPage). The server allows users to configure the time and date, control LED and display brightness, and retrieve time data from the RTC. Clicking "Get Local Time" populates fields with the current time from the accessing device (web browser), while "Prog RTC Time" programs the RTC module. 
+The LED brightness and display brightness sliders will adjust the brightness of the LED strip and the time displays.
+Scene Setup is a work in progress, and my goal is to synchronize LED colors and brightness with the current time.
   
   
 
