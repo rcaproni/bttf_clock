@@ -8,7 +8,7 @@ I'm a big fan of the BTTF trilogy. The first project I decided to tackle when I 
 
 For my design, I made some changes to the original:
 
-- Case divided into two parts for printing on a small Ender3 printer: The original case is a single piece, but it is larger than the maximum size of my Ender3 printer. Using SketchUp, I divided the case into two parts with sizes compatible with my printer. I also created internal pins to connect the two parts with glue. The STL files for the edited case can be found in the 3D folder
+- **Case modification for small printers**: The original case was too large for my Ender3, so I divided it into two parts using SketchUp. I added internal pins to ensure the two halves could be glued securely. The modified STL files are available in the 3D folder.
   
   ![Alt text](images/divided.png?raw=true "Title")
   
